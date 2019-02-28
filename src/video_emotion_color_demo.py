@@ -33,7 +33,11 @@ emotion_window = []
 
 # starting video streaming
 cv2.namedWindow('window_frame')
-video_capture = cv2.VideoCapture(0)
+# video_capture = cv2.VideoCapture(0)
+# video_capture = cv2.VideoCapture('../../videos/6614059835535133954.mp4')
+# video_capture = cv2.VideoCapture('../../videos/6620049294030277893.mp4')
+video_capture = cv2.VideoCapture('../../videos/6628669426822548741.mp4')
+
 while True:
     bgr_image = video_capture.read()[1]
     gray_image = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
